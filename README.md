@@ -110,7 +110,7 @@ Double-click start_windows.bat from the project folder. It finds a supported Pyt
 
 Use Python 3.11, 3.12, or 3.13. PyTorch 2.6 does not publish wheels for Python 3.14 or newer, so installation fails on those versions. The following commands use a virtual environment:
 
-    git clone https://github.com/<praneeth8945>/lumirestore-ai.git
+    git clone https://github.com/praneeth8945/lumirestore-ai.git
     cd lumirestore-ai
     python -m venv .venv
     source .venv/bin/activate        # Windows: .venv\Scripts\activate
