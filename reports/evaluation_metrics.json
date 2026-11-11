@@ -1,0 +1,43 @@
+{
+  "project": "LumiRestore AI",
+  "architecture": "ResidualUNet",
+  "base_channels": 24,
+  "parameter_count": 2331147,
+  "device": "CPU",
+  "dataset": {
+    "name": "BSDS300 clean images with synthetic low-light degradation",
+    "split_counts": {
+      "train": 160,
+      "validation": 40,
+      "test": 100
+    },
+    "source_disjoint": true
+  },
+  "training": {
+    "seed": 2024,
+    "configured_epochs": 12,
+    "completed_epochs": 12,
+    "batch_size": 6,
+    "patch_size": 128,
+    "train_patches_per_image": 3,
+    "loss": "0.80 Charbonnier + 0.20 (1 - SSIM)",
+    "best_validation_psnr": 26.67950439453125,
+    "training_seconds": 438.27
+  },
+  "evaluation": {
+    "input_psnr": 9.942809,
+    "input_ssim": 0.30904,
+    "adaptive_gamma_psnr": 21.109156,
+    "adaptive_gamma_ssim": 0.860336,
+    "reconstruction_psnr": 26.130342,
+    "reconstruction_ssim": 0.934631,
+    "reconstruction_mae": 0.050036,
+    "reconstruction_mse": 0.003992,
+    "psnr_gain_over_input": 16.187533,
+    "ssim_gain_over_input": 0.625591,
+    "cpu_inference_ms_median": 27.782,
+    "cpu_inference_ms_p95": 32.749
+  },
+  "limitation": "Metrics are measured on source-disjoint BSDS300 images with this project's synthetic degradation process. They are not a claim of universal performance on all real low-light cameras or scenes.",
+  "generated_at_utc": "2026-09-24T03:05:23.123075+00:00"
+}

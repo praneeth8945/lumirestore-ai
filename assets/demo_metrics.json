@@ -1,0 +1,20 @@
+{
+  "description": "Paired metrics for the packaged demonstration triplet, plus aggregate metrics for the fixed source-disjoint test split from the same 12-epoch run.",
+  "demo_example": {
+    "input_luminance": 5.989,
+    "reconstruction_luminance": 28.734,
+    "reconstruction_psnr": 20.33869,
+    "reconstruction_ssim": 0.873294,
+    "reconstruction_mae": 0.090837
+  },
+  "test_split_aggregate": {
+    "input_psnr": 9.942809,
+    "input_ssim": 0.30904,
+    "adaptive_gamma_psnr": 21.109156,
+    "adaptive_gamma_ssim": 0.860336,
+    "reconstruction_psnr": 26.130342,
+    "reconstruction_ssim": 0.934631,
+    "reconstruction_mae": 0.050036,
+    "reconstruction_mse": 0.003992
+  }
+}
